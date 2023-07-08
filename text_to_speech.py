@@ -4,7 +4,7 @@ import os
 
 def text_to_speech():
     text = input("Enter text to change in voice file -> ")
-    language = 'in'
+    language = 'en'
     myobj = gTTS(text=text, lang=language, slow=False)
     myobj.save("speech.mp3")
     os.system("speech.mp3")
